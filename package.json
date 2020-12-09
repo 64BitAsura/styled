@@ -1,8 +1,20 @@
 {
-  "name": "mltm7",
+  "name": "styled",
   "version": "1.0.0",
   "description": "",
   "keywords": [],
   "main": "/index.html",
-  "dependencies": {}
+  "dependencies": {
+    "react": "16",
+    "react-dom": "16",
+    "react-router-dom": "latest",
+    "styled-components": "latest",
+    "styled-system": "latest",
+    "reflexbox": "latest"
+  },
+  "devDependencies": {
+    "@type/react": "16",
+    "@type/react-dom": "16",
+    "typescript": "3.7.5"
+  }
 }
