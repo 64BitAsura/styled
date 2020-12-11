@@ -1,0 +1,26 @@
+{
+  "name": "styled",
+  "version": "1.0.0",
+  "description": "",
+  "keywords": [],
+  "main": "src/entrypoint.tsx",
+  "dependencies": {
+    "react": "17.0.0",
+    "react-dom": "17.0.0",
+    "react-router-dom": "latest",
+    "styled-components": "latest",
+    "styled-system": "latest",
+    "reflexbox": "latest"
+  },
+  "devDependencies": {
+    "@type/react": "16",
+    "@type/react-dom": "16",
+    "typescript": "3.7.5",
+    "react-scripts": "latest"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "united": "react-scripts test",
+    "build": "react-scripts build"
+  }
+}
