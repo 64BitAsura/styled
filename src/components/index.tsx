@@ -79,7 +79,7 @@ export const CardContainer = styled.article`
   justify-content: center;
   margin-top: ${(props) => props.theme.spaceUnit(1 / 2)};
 `;
-export const Card = styled.div`
+export const Card = styled.div<{ disabled?: boolean }>`
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12),
     0 3px 1px -2px rgba(0, 0, 0, 0.2);
   height: 225px;
@@ -95,6 +95,7 @@ export const Card = styled.div`
   }
 
   img {
+    filter: ${(props) => (props.disabled ? "grayscale(100%)" : "none")};
     max-width: 100%;
     position: absolute;
     height: auto;

@@ -26,18 +26,18 @@ export const Root = () => {
             <CategoryTitle>Movies</CategoryTitle>
           </Card>
         </Link>
-        <Link to={"/books"}>
-          <Card>
-            <img src={"./images/book.jpg"} />
-            <CategoryTitle>Books</CategoryTitle>
-          </Card>
-        </Link>
-        <Link to={"/songs"}>
-          <Card>
-            <img src={"./images/song.jpg"} />
-            <CategoryTitle>Songs</CategoryTitle>
-          </Card>
-        </Link>
+        {/*<Link to={"/books"}>*/}
+        <Card disabled={true}>
+          <img src={"./images/book.jpg"} />
+          <CategoryTitle>Books</CategoryTitle>
+        </Card>
+        {/*</Link>*/}
+        {/*<Link to={"/songs"}>*/}
+        <Card disabled={true}>
+          <img src={"./images/song.jpg"} />
+          <CategoryTitle>Songs</CategoryTitle>
+        </Card>
+        {/*</Link>*/}
       </CardContainer>
     </>
   );
