@@ -149,7 +149,7 @@ export const Movies = ({
           }}
         >
           <option
-            data-testid={"genre-list-option"}
+            data-testid={"genre-list-option-value"}
             key={GENRE_POPULAR_ID}
             value={GENRE_POPULAR_ID}
           >

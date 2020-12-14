@@ -4,6 +4,7 @@ import React from "react";
 import { render, fireEvent, screen, waitFor } from "@testing-library/react";
 import App from "./application";
 
+jest.setTimeout(10000);
 const mockHistoryPush = jest.fn();
 jest.mock("react-router-dom", () => ({
   // @ts-ignore
@@ -23,7 +24,7 @@ it("renders My list", () => {
 it("renders My Movies", async () => {
   render(<App />);
   fireEvent.click(screen.getByText(/Movies/i));
-  expect(screen.getByTestId("genre_title")).toBeInTheDocument();
+  expect(screen.getByText("My Movies")).toBeInTheDocument();
 });
 
 it("renders My Movies placeholder cards", async () => {
@@ -43,8 +44,10 @@ it("renders My Movies genre list", async () => {
   render(<App />);
   fireEvent.click(screen.getByText(/Movies/i));
   await waitFor(() => screen.getAllByTestId("movie-card"));
-  await waitFor(() => screen.getAllByTestId("genre-list-option"));
-  expect(screen.getAllByTestId("genre-list-option")?.[1]).toBeInTheDocument();
+  await waitFor(() => screen.getAllByTestId("genre-list-option-value"));
+  expect(
+    screen.getAllByTestId("genre-list-option-value")?.[0]
+  ).toBeInTheDocument();
 });
 
 const GENRE_ACTION_ID = 28;
