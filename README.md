@@ -11,3 +11,6 @@
 
 ### To lint
 - yarn run lint / npm run lint
+
+![alt text](https://i.ibb.co/HGxDsCW/Screenshot-2020-12-15-at-00-28-18.png "")
+
