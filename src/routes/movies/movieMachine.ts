@@ -10,7 +10,6 @@ const invokeFetchMovies = (
   total_pages: number;
 }> => {
   const { genre, search } = context;
-  debugger;
   const url =
     search != null
       ? `https://api.themoviedb.org/3/search/movie?query=${search}&api_key=${process.env.REACT_APP_MOVIE_DB_API_KEY}`

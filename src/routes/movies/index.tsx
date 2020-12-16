@@ -104,7 +104,7 @@ const MoviesContainer = styled(CardContainer)`
   justify-content: center;
 `;
 
-export const Movies = ({
+const Movies = ({
   service
 }: {
   service: ActorRefFrom<StateMachine<MovieMachineContext, any, MovieEvent>>;
@@ -200,3 +200,5 @@ export const Movies = ({
     </>
   );
 };
+
+export default Movies;

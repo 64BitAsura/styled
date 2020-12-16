@@ -2,7 +2,7 @@ import { AppTitle, AppTitleBar, Back, Refresh } from "../../components";
 import React from "react";
 import { ActorRefFrom, StateMachine } from "xstate";
 
-export const Books = ({
+const Books = ({
   service
 }: {
   service: ActorRefFrom<StateMachine<any, any, any>>;
@@ -12,3 +12,5 @@ export const Books = ({
     <AppTitle>My List</AppTitle> <Refresh onRefresh={() => {}} />
   </AppTitleBar>
 );
+
+export default Books;

@@ -13,7 +13,7 @@ const CategoryTitle = styled.span`
   color: ${(props) => props.theme.colors.fg};
 `;
 
-export const Root = () => {
+const Root = () => {
   return (
     <>
       <AppTitleBar>
@@ -42,3 +42,5 @@ export const Root = () => {
     </>
   );
 };
+
+export default Root;

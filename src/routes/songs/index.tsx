@@ -2,7 +2,7 @@ import { AppTitle, AppTitleBar, Back, Refresh } from "../../components";
 import React from "react";
 import { ActorRefFrom, StateMachine } from "xstate";
 
-export const Songs = ({
+const Songs = ({
   service
 }: {
   service: ActorRefFrom<StateMachine<any, any, any>>;
@@ -12,3 +12,5 @@ export const Songs = ({
     <AppTitle>My List</AppTitle> <Refresh onRefresh={() => {}} />
   </AppTitleBar>
 );
+
+export default Songs;
