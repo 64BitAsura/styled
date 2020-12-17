@@ -3,6 +3,7 @@ import { BrowserRouter, Route, useParams } from "react-router-dom";
 import styled, { createGlobalStyle, ThemeProvider } from "styled-components";
 import theme from "./theme";
 import { useMachine } from "@xstate/react";
+import { inspect } from "@xstate/inspect";
 import { MyListMachine } from "./routes/machine";
 import { AppTitleBar, CardContainer } from "./components";
 
@@ -57,6 +58,11 @@ const AppContainer = styled(CardContainer)`
   animation-duration: 2.4s;
   animation-iteration-count: infinite;
 `;
+
+inspect({
+  url: "https://statecharts.io/inspect",
+  iframe: false
+});
 
 const AppShell = styled(({ className }: { className?: string }) => {
   const { subListId } = useParams<{ subListId?: string }>();
